@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>FrameSur | Soluciones de vivienda en Uruguay</title>
+  <meta name="description" content="Construimos tu proyecto de vivienda a medida. Steel Framing, ampliaciones y espacios exteriores en Uruguay. Presupuesto sin cargo." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FrameSur | Soluciones de vivienda en Uruguay" />
+  <meta property="og:description" content="Construimos tu proyecto de vivienda a medida. Steel Framing, ampliaciones y espacios exteriores en Uruguay. Presupuesto sin cargo." />
+  <meta property="og:url" content="https://framesur.com.uy" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              dark:   '#1a3a2a',
+              green:  '#2d6a4f',
+              medium: '#52b788',
+              cream:  '#f5f0e8',
+              warm:   '#e9e0d0',
+              text:   '#2c2c2c',
+              muted:  '#6b7280',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "FrameSur",
+    "description": "Construimos tu proyecto de vivienda a medida. Steel Framing, ampliaciones y espacios exteriores en Uruguay.",
+    "url": "https://framesur.com.uy",
+    "telephone": "+598-XXXXXXXX",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dirección placeholder",
+      "addressLocality": "Montevideo",
+      "addressCountry": "UY"
+    },
+    "sameAs": []
+  }
+  </script>
+</head>
+<body class="font-sans text-brand-text bg-white">
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header
+    id="navbar"
+    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-shadow duration-300"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 shrink-0">
+        <i data-lucide="building-2" class="w-6 h-6 text-brand-green"></i>
+        <span class="text-xl font-black tracking-tight text-brand-text">
+          FRAME<span class="text-brand-green">SUR</span>
+        </span>
+      </a>
+
+      <!-- Links desktop -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Menú principal">
+        <a href="#soluciones" data-nav-link
+           class="text-sm font-medium text-brand-muted hover:text-brand-green transition-colors">
+          Soluciones
+        </a>
+        <a href="#proyectos" data-nav-link
+           class="text-sm font-medium text-brand-muted hover:text-brand-green transition-colors">
+          Proyectos
+        </a>
+        <a href="#nosotros" data-nav-link
+           class="text-sm font-medium text-brand-muted hover:text-brand-green transition-colors">
+          Nosotros
+        </a>
+        <a href="#contacto" data-nav-link
+           class="text-sm font-medium text-brand-muted hover:text-brand-green transition-colors">
+          Contacto
+        </a>
+      </nav>
+
+      <!-- CTA desktop + hamburger mobile -->
+      <div class="flex items-center gap-4">
+        <a
+          href="https://wa.me/REEMPLAZAR"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden md:inline-flex items-center bg-brand-green text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md hover:bg-brand-dark transition-colors"
+        >
+          Presupuesto sin cargo
+        </a>
+
+        <!-- Hamburger mobile -->
+        <button
+          id="menu-toggle"
+          class="hamburger md:hidden text-brand-text"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div><!-- /inner -->
+
+    <!-- Menú mobile -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+      <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1" aria-label="Menú mobile">
+        <a href="#soluciones" class="mobile-menu-link text-sm font-medium text-brand-muted hover:text-brand-green py-3 transition-colors">
+          Soluciones
+        </a>
+        <a href="#proyectos" class="mobile-menu-link text-sm font-medium text-brand-muted hover:text-brand-green py-3 transition-colors">
+          Proyectos
+        </a>
+        <a href="#nosotros" class="mobile-menu-link text-sm font-medium text-brand-muted hover:text-brand-green py-3 transition-colors">
+          Nosotros
+        </a>
+        <a href="#contacto" class="mobile-menu-link text-sm font-medium text-brand-muted hover:text-brand-green py-3 transition-colors">
+          Contacto
+        </a>
+        <div class="border-t border-gray-100 mt-2 pt-4">
+          <a
+            href="https://wa.me/REEMPLAZAR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-menu-link flex items-center justify-center gap-2 bg-brand-green text-white w-full py-3 rounded-lg text-sm font-semibold"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Escribinos por WhatsApp
+          </a>
+        </div>
+      </nav>
+    </div><!-- /mobile-menu -->
+
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+      <!-- Imagen de fondo -->
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80')"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Overlay oscuro base -->
+      <div class="absolute inset-0 bg-black/50" aria-hidden="true"></div>
+
+      <!-- Degradado direccional -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Contenido -->
+      <div class="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto hero-animate">
+
+        <!-- Badge -->
+        <span class="inline-block bg-white/10 backdrop-blur text-white text-xs uppercase tracking-wider px-4 py-2 rounded-full mb-8">
+          Steel Framing · Wood Frame · Construcción a medida
+        </span>
+
+        <!-- H1 -->
+        <h1 class="text-5xl lg:text-7xl font-black text-white tracking-tight leading-tight">
+          Tu espacio.<br />
+          Tu <span class="text-brand-medium">proyecto</span>.<br />
+          Sin vueltas.
+        </h1>
+
+        <!-- Subtítulo -->
+        <p class="text-white/85 text-lg lg:text-xl max-w-2xl mx-auto mt-6">
+          Construimos viviendas, ampliaciones y espacios exteriores en Uruguay.
+          Presupuesto cerrado, plazos reales.
+        </p>
+
+        <!-- Botones -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+          <a
+            href="https://wa.me/REEMPLAZAR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-brand-green text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:bg-brand-dark transition-colors w-full sm:w-auto text-center"
+          >
+            Pedí tu presupuesto
+          </a>
+          <a
+            href="#proyectos"
+            class="bg-white/10 border border-white/30 text-white px-8 py-4 rounded-xl backdrop-blur-sm hover:bg-white/20 transition-colors w-full sm:w-auto text-center"
+          >
+            Ver proyectos
+          </a>
+        </div>
+
+        <!-- Trust text -->
+        <p class="text-white/60 text-sm mt-4">
+          Sin compromiso · Respuesta en 24hs · Agenda abierta
+        </p>
+
+      </div><!-- /contenido -->
+    </section>
+
+    <!-- ==================== SOLUCIONES ==================== -->
+    <section id="soluciones" class="py-24 bg-brand-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+          <p class="text-xs uppercase tracking-widest text-brand-green font-semibold mb-3">
+            Lo que hacemos
+          </p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-text">
+            Soluciones reales para aprovechar tu terreno
+          </h2>
+          <p class="mt-4 text-brand-muted leading-relaxed">
+            Cada proyecto es diferente. Trabajamos con vos desde la idea hasta
+            la llave en mano, con precio cerrado y sin sorpresas.
+          </p>
+        </div>
+
+        <!-- Grid de servicios -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- 1 · Viviendas Steel Framing -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 fade-up">
+            <div class="w-12 h-12 bg-brand-cream rounded-xl flex items-center justify-center mb-5">
+              <i data-lucide="home" class="w-6 h-6 text-brand-green"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-brand-text mb-2">Viviendas Steel Framing</h3>
+            <p class="text-brand-muted text-sm leading-relaxed">
+              Terminás en 2 a 4 meses. Sin humedad, sin polvo, sin demoras.
+              La alternativa real a la construcción tradicional.
+            </p>
+          </article>
+
+          <!-- 2 · Subdivisión de terrenos -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 fade-up delay-100">
+            <div class="w-12 h-12 bg-brand-cream rounded-xl flex items-center justify-center mb-5">
+              <i data-lucide="split-square-vertical" class="w-6 h-6 text-brand-green"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-brand-text mb-2">Subdivisión de terrenos</h3>
+            <p class="text-brand-muted text-sm leading-relaxed">
+              Dividís el terreno entre socios, familiares o inversores y construimos
+              en cada fracción. Asesoramiento desde el plano hasta la obra.
+            </p>
+          </article>
+
+          <!-- 3 · Ampliaciones -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 fade-up delay-200">
+            <div class="w-12 h-12 bg-brand-cream rounded-xl flex items-center justify-center mb-5">
+              <i data-lucide="expand" class="w-6 h-6 text-brand-green"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-brand-text mb-2">Ampliaciones</h3>
+            <p class="text-brand-muted text-sm leading-relaxed">
+              Aprovechás el fondo, el lateral o la terraza de tu casa actual.
+              Sin tirar todo abajo, sin meses de obra.
+            </p>
+          </article>
+
+          <!-- 4 · Pérgolas y espacios exteriores -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 fade-up">
+            <div class="w-12 h-12 bg-brand-cream rounded-xl flex items-center justify-center mb-5">
+              <i data-lucide="trees" class="w-6 h-6 text-brand-green"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-brand-text mb-2">Pérgolas y espacios exteriores</h3>
+            <p class="text-brand-muted text-sm leading-relaxed">
+              Diseño e instalación de pérgolas, quinchos y espacios de uso mixto.
+              Materiales para el clima uruguayo.
+            </p>
+          </article>
+
+          <!-- 5 · Parrilleros -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 fade-up delay-100">
+            <div class="w-12 h-12 bg-brand-cream rounded-xl flex items-center justify-center mb-5">
+              <i data-lucide="flame" class="w-6 h-6 text-brand-green"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-brand-text mb-2">Parrilleros</h3>
+            <p class="text-brand-muted text-sm leading-relaxed">
+              Construimos el parrillero que se integra a tu espacio.
+              Steel Framing o mampostería según tu preferencia.
+            </p>
+          </article>
+
+          <!-- 6 · Locales y galpones -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 fade-up delay-200">
+            <div class="w-12 h-12 bg-brand-cream rounded-xl flex items-center justify-center mb-5">
+              <i data-lucide="warehouse" class="w-6 h-6 text-brand-green"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-brand-text mb-2">Locales y galpones</h3>
+            <p class="text-brand-muted text-sm leading-relaxed">
+              Construcciones no habitacionales con estructura en seco.
+              Rapidez, eficiencia y costo controlado.
+            </p>
+          </article>
+
+        </div><!-- /grid -->
+      </div>
+    </section>
+
+    <!-- ==================== COMPARATIVA ==================== -->
+    <section id="comparativa" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+          <p class="text-xs uppercase tracking-widest text-brand-green font-semibold mb-3">
+            La pregunta más común
+          </p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-text">
+            ¿Por qué Steel Framing y no ladrillo tradicional?
+          </h2>
+          <p class="mt-4 text-brand-muted leading-relaxed">
+            Los números hablan solos antes de que tomes una decisión.
+          </p>
+        </div>
+
+        <!-- Tabla comparativa -->
+        <div class="fade-up overflow-x-auto rounded-2xl shadow-sm border border-brand-warm">
+          <table class="w-full min-w-[600px] text-sm">
+            <thead>
+              <tr class="bg-brand-dark text-white">
+                <th class="px-6 py-4 text-left font-semibold">Característica</th>
+                <th class="px-6 py-4 text-left font-semibold">Steel Framing</th>
+                <th class="px-6 py-4 text-left font-semibold">Tradicional</th>
+                <th class="px-6 py-4 text-left font-semibold">Ventaja</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white">
+                <td class="px-6 py-4 font-medium text-brand-text">Tiempo de obra</td>
+                <td class="px-6 py-4 text-brand-text">2–4 meses</td>
+                <td class="px-6 py-4 text-brand-muted">8–18 meses</td>
+                <td class="px-6 py-4 font-bold text-brand-green">✓ Steel</td>
+              </tr>
+              <tr class="bg-brand-cream">
+                <td class="px-6 py-4 font-medium text-brand-text">Costo predecible</td>
+                <td class="px-6 py-4 text-brand-text">Presupuesto cerrado</td>
+                <td class="px-6 py-4 text-brand-muted">Variables</td>
+                <td class="px-6 py-4 font-bold text-brand-green">✓ Steel</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-6 py-4 font-medium text-brand-text">Humedad en obra</td>
+                <td class="px-6 py-4 text-brand-text">Mínima (construcción seca)</td>
+                <td class="px-6 py-4 text-brand-muted">Alta</td>
+                <td class="px-6 py-4 font-bold text-brand-green">✓ Steel</td>
+              </tr>
+              <tr class="bg-brand-cream">
+                <td class="px-6 py-4 font-medium text-brand-text">Aislamiento térmico</td>
+                <td class="px-6 py-4 text-brand-text">Superior</td>
+                <td class="px-6 py-4 text-brand-muted">Estándar</td>
+                <td class="px-6 py-4 font-bold text-brand-green">✓ Steel</td>
+              </tr>
+              <tr class="bg-white">
+                <td class="px-6 py-4 font-medium text-brand-text">Resistencia sísmica</td>
+                <td class="px-6 py-4 text-brand-text">Alta (flexible)</td>
+                <td class="px-6 py-4 text-brand-muted">Media</td>
+                <td class="px-6 py-4 font-bold text-brand-green">✓ Steel</td>
+              </tr>
+              <tr class="bg-brand-cream">
+                <td class="px-6 py-4 font-medium text-brand-text">Impacto ambiental</td>
+                <td class="px-6 py-4 text-brand-text">Bajo (menos residuos)</td>
+                <td class="px-6 py-4 text-brand-muted">Alto</td>
+                <td class="px-6 py-4 font-bold text-brand-green">✓ Steel</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /tabla -->
+
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats"></section>
+
+    <!-- ==================== PROYECTOS ==================== -->
+    <section id="proyectos" class="py-24 bg-brand-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+          <p class="text-xs uppercase tracking-widest text-brand-green font-semibold mb-3">
+            Proyectos tipo
+          </p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-text">
+            Soluciones listas para adaptar a tu terreno
+          </h2>
+          <p class="mt-4 text-brand-muted leading-relaxed">
+            Modelos estándar probados que podemos personalizar.
+            Planos disponibles, costos orientativos y tiempo de obra definido.
+          </p>
+        </div>
+
+        <!-- Grid de proyectos -->
+        <div class="grid lg:grid-cols-3 gap-8 fade-up">
+
+          <!-- Proyecto 1 · 45m² 1 dorm -->
+          <article class="rounded-2xl overflow-hidden shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 bg-white">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80"
+                alt="Casa 1 dormitorio 45m²"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="absolute top-4 left-4 bg-brand-green text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Steel Framing
+              </span>
+            </div>
+            <div class="p-6 border-t-0">
+              <h3 class="text-lg font-bold text-brand-text mb-1">Casa 1 dormitorio — 45m²</h3>
+              <p class="text-sm text-brand-muted mb-4">
+                Ideal para terrenos pequeños, uso propio o alquiler. Cocina-estar-comedor
+                integrado, baño completo y dormitorio.
+              </p>
+              <dl class="grid grid-cols-2 gap-2 text-sm mb-5">
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="ruler" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Superficie:</span>
+                  <span class="font-semibold text-brand-text">45m²</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="bed-double" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Dormitorios:</span>
+                  <span class="font-semibold text-brand-text">1</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="bath" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Baño:</span>
+                  <span class="font-semibold text-brand-text">1</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="clock" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Plazo:</span>
+                  <span class="font-semibold text-brand-text">2–3 meses</span>
+                </div>
+              </dl>
+              <a
+                href="catalogo.html#proyecto-45-1d"
+                class="block w-full text-center border border-brand-green text-brand-green hover:bg-brand-green hover:text-white rounded-xl py-2.5 text-sm font-medium transition-colors"
+              >
+                Ver proyecto completo
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 · 45m² 2 dorm -->
+          <article class="rounded-2xl overflow-hidden shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 bg-white">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+                alt="Casa 2 dormitorios 45m²"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="absolute top-4 left-4 bg-brand-green text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Steel Framing
+              </span>
+            </div>
+            <div class="p-6 border-t-0">
+              <h3 class="text-lg font-bold text-brand-text mb-1">Casa 2 dormitorios — 45m²</h3>
+              <p class="text-sm text-brand-muted mb-4">
+                Distribución eficiente para familia o compartida. Estar-comedor-cocina,
+                hall, baño y dos dormitorios.
+              </p>
+              <dl class="grid grid-cols-2 gap-2 text-sm mb-5">
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="ruler" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Superficie:</span>
+                  <span class="font-semibold text-brand-text">45m²</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="bed-double" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Dormitorios:</span>
+                  <span class="font-semibold text-brand-text">2</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="bath" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Baño:</span>
+                  <span class="font-semibold text-brand-text">1</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="clock" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Plazo:</span>
+                  <span class="font-semibold text-brand-text">2–4 meses</span>
+                </div>
+              </dl>
+              <a
+                href="catalogo.html#proyecto-45-2d"
+                class="block w-full text-center border border-brand-green text-brand-green hover:bg-brand-green hover:text-white rounded-xl py-2.5 text-sm font-medium transition-colors"
+              >
+                Ver proyecto completo
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 · A medida -->
+          <article class="rounded-2xl overflow-hidden shadow-sm border border-brand-warm hover:shadow-lg transition-all duration-300 bg-white">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80"
+                alt="Ampliación o subdivisión a medida"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="absolute top-4 left-4 bg-brand-dark text-white text-xs font-semibold px-3 py-1 rounded-full">
+                A medida
+              </span>
+            </div>
+            <div class="p-6 border-t-0">
+              <h3 class="text-lg font-bold text-brand-text mb-1">Ampliación o subdivisión</h3>
+              <p class="text-sm text-brand-muted mb-4">
+                ¿Tenés terreno propio o familiar? Diseñamos la solución según
+                lo que tenés disponible.
+              </p>
+              <dl class="grid grid-cols-2 gap-2 text-sm mb-5">
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="ruler" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Superficie:</span>
+                  <span class="font-semibold text-brand-text">A definir</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="layout-dashboard" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Planta:</span>
+                  <span class="font-semibold text-brand-text">Personalizable</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="bath" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Baño:</span>
+                  <span class="font-semibold text-brand-text">1+</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <i data-lucide="clock" class="w-4 h-4 text-brand-green shrink-0"></i>
+                  <span class="text-brand-muted">Plazo:</span>
+                  <span class="font-semibold text-brand-text">A consultar</span>
+                </div>
+              </dl>
+              <a
+                href="catalogo.html#proyecto-medida"
+                class="block w-full text-center border border-brand-green text-brand-green hover:bg-brand-green hover:text-white rounded-xl py-2.5 text-sm font-medium transition-colors"
+              >
+                Ver proyecto completo
+              </a>
+            </div>
+          </article>
+
+        </div><!-- /grid proyectos -->
+
+        <!-- CTA catálogo completo -->
+        <div class="text-center mt-12 fade-up">
+          <a
+            href="catalogo.html"
+            class="inline-block bg-brand-dark text-white px-8 py-4 rounded-xl font-semibold hover:bg-brand-green transition-colors shadow-md"
+          >
+            Ver catálogo completo con planos
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== NOSOTROS ==================== -->
+    <section id="nosotros" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+          <!-- Columna izquierda -->
+          <div class="fade-up">
+            <p class="text-xs uppercase tracking-widest text-brand-green font-semibold mb-3">
+              Quiénes somos
+            </p>
+            <h2 class="text-3xl lg:text-4xl font-bold text-brand-text mb-6">
+              Una constructora que entiende cómo vivís
+            </h2>
+            <p class="text-brand-muted leading-relaxed mb-4">
+              En Uruguay construir no es fácil: los terrenos son caros, los permisos demoran
+              y la obra tradicional se estira meses. FrameSur nació para resolver eso.
+            </p>
+            <p class="text-brand-muted leading-relaxed mb-10">
+              Trabajamos con familias, parejas, amigos y vecinos que quieren aprovechar mejor
+              lo que tienen. Subdivisiones, ampliaciones, viviendas nuevas. Siempre con precio
+              cerrado y fechas reales.
+            </p>
+
+            <!-- Beneficios -->
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-brand-cream rounded-xl flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="clock" class="w-5 h-5 text-brand-green"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-brand-text mb-1">Tu obra en 2 a 4 meses</p>
+                  <p class="text-brand-muted text-sm leading-relaxed">
+                    Sin esperas interminables. Steel Framing es hasta 3 veces más rápido
+                    que la obra tradicional.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-brand-cream rounded-xl flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="shield-check" class="w-5 h-5 text-brand-green"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-brand-text mb-1">Precio que se cumple</p>
+                  <p class="text-brand-muted text-sm leading-relaxed">
+                    Presupuesto cerrado antes de empezar. Sin adicionales de último momento.
+                  </p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-brand-cream rounded-xl flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="users" class="w-5 h-5 text-brand-green"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-brand-text mb-1">Proyectos compartidos</p>
+                  <p class="text-brand-muted text-sm leading-relaxed">
+                    Asesoramos grupos de 2 o 3 personas que quieren dividir un terreno
+                    y construir cada uno su vivienda.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="relative fade-up delay-100">
+            <img
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1000&q=80"
+              alt="Equipo FrameSur en obra"
+              class="rounded-2xl shadow-2xl object-cover h-[500px] w-full"
+              loading="lazy"
+              decoding="async"
+            />
+            <!-- Tarjeta flotante -->
+            <div class="hidden md:block absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-brand-warm">
+              <p class="text-4xl font-black text-brand-green leading-none">10+</p>
+              <p class="text-sm font-semibold text-brand-muted uppercase tracking-wide mt-1">
+                Años de experiencia
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATS ==================== -->
+    <section id="stats" class="py-20 bg-brand-dark text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+          <div class="fade-up">
+            <div
+              class="counter-display text-5xl font-black text-brand-medium"
+              data-counter="120"
+            >0</div>
+            <p class="text-gray-400 text-sm uppercase tracking-widest mt-2">
+              Proyectos terminados
+            </p>
+          </div>
+
+          <div class="fade-up delay-100">
+            <div
+              class="counter-display text-5xl font-black text-brand-medium"
+              data-counter="10"
+            >0</div>
+            <p class="text-gray-400 text-sm uppercase tracking-widest mt-2">
+              Años de experiencia
+            </p>
+          </div>
+
+          <div class="fade-up delay-200">
+            <div
+              class="counter-display text-5xl font-black text-brand-medium"
+              data-counter="8500"
+            >0</div>
+            <p class="text-gray-400 text-sm uppercase tracking-widest mt-2">
+              m² construidos
+            </p>
+          </div>
+
+          <div class="fade-up delay-300">
+            <div
+              class="counter-display text-5xl font-black text-brand-medium"
+              data-counter="100"
+            >0</div>
+            <p class="text-gray-400 text-sm uppercase tracking-widest mt-2">
+              Presupuesto cumplido %
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROCESO ==================== -->
+    <section id="proceso" class="py-24 bg-brand-dark text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-20 fade-up">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+            Así trabajamos: sin vueltas
+          </h2>
+          <p class="text-gray-400 leading-relaxed">
+            De la consulta a la llave en mano, con fechas que se cumplen.
+          </p>
+        </div>
+
+        <!-- Pasos -->
+        <div class="relative">
+          <!-- Línea horizontal conectora (solo desktop) -->
+          <div
+            class="hidden md:block absolute left-0 right-0 h-0.5 bg-gray-700 top-8"
+            aria-hidden="true"
+          ></div>
+
+          <div class="grid md:grid-cols-4 gap-10 relative z-10">
+
+            <!-- Paso 1 -->
+            <div class="text-center fade-up">
+              <div class="w-16 h-16 mx-auto rounded-full bg-brand-green text-white flex items-center justify-center font-bold text-2xl mb-6">
+                1
+              </div>
+              <h4 class="font-semibold text-white text-lg mb-2">Consulta</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Nos escribís y respondemos en menos de 24 horas.
+              </p>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="text-center fade-up delay-100">
+              <div class="w-16 h-16 mx-auto rounded-full bg-gray-800 text-white border-2 border-brand-green flex items-center justify-center font-bold text-2xl mb-6">
+                2
+              </div>
+              <h4 class="font-semibold text-white text-lg mb-2">Presupuesto</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Visitamos, evaluamos y te damos el número cerrado.
+              </p>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="text-center fade-up delay-200">
+              <div class="w-16 h-16 mx-auto rounded-full bg-gray-800 text-white border-2 border-brand-green flex items-center justify-center font-bold text-2xl mb-6">
+                3
+              </div>
+              <h4 class="font-semibold text-white text-lg mb-2">Ejecución</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Manos a la obra con supervisión técnica en cada etapa.
+              </p>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="text-center fade-up delay-300">
+              <div class="w-16 h-16 mx-auto rounded-full bg-gray-800 text-white border-2 border-brand-green flex items-center justify-center font-bold text-2xl mb-6">
+                4
+              </div>
+              <h4 class="font-semibold text-white text-lg mb-2">Entrega</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Llave en mano en la fecha acordada. Obra limpia y terminada.
+              </p>
+            </div>
+
+          </div>
+        </div><!-- /relative -->
+
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS ==================== -->
+    <section id="testimonios" class="py-24 bg-brand-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-14 fade-up">
+          <p class="text-xs uppercase tracking-widest text-brand-green font-semibold mb-3">
+            Lo que dicen nuestros clientes
+          </p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-text">
+            Resultados que hablan solos
+          </h2>
+        </div>
+
+        <!-- Grid de testimonios -->
+        <div class="grid md:grid-cols-3 gap-8">
+
+          <!-- Testimonio 1 -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm fade-up">
+            <div class="flex gap-1 mb-5">
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+            </div>
+            <blockquote class="text-brand-text leading-relaxed mb-6">
+              "Compramos el terreno con mi hermano y FrameSur nos ayudó a dividirlo y
+              construir cada uno su casa. En 4 meses teníamos las dos viviendas listas."
+            </blockquote>
+            <footer class="text-sm font-semibold text-brand-muted">
+              — Gonzalo M., Canelones
+            </footer>
+          </article>
+
+          <!-- Testimonio 2 -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm fade-up delay-100">
+            <div class="flex gap-1 mb-5">
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+            </div>
+            <blockquote class="text-brand-text leading-relaxed mb-6">
+              "Construimos en el fondo del terreno de los viejos. Rápido, prolijo y el
+              precio fue exactamente el presupuestado."
+            </blockquote>
+            <footer class="text-sm font-semibold text-brand-muted">
+              — Valentina S., Montevideo
+            </footer>
+          </article>
+
+          <!-- Testimonio 3 -->
+          <article class="bg-white rounded-2xl p-8 shadow-sm border border-brand-warm fade-up delay-200">
+            <div class="flex gap-1 mb-5">
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 text-brand-green fill-current"></i>
+            </div>
+            <blockquote class="text-brand-text leading-relaxed mb-6">
+              "Queríamos un parrillero con pérgola y quedó impecable. Muy ordenados con
+              los plazos y el trabajo."
+            </blockquote>
+            <footer class="text-sm font-semibold text-brand-muted">
+              — Diego F., Maldonado
+            </footer>
+          </article>
+
+        </div><!-- /grid -->
+      </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="relative py-24 bg-brand-green text-white overflow-hidden">
+      <!-- Círculo decorativo -->
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 pointer-events-none"
+        aria-hidden="true"
+      ></div>
+
+      <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center fade-up">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          Coordiná tu proyecto esta semana
+        </h2>
+        <p class="text-green-100 text-xl mb-3">
+          Presupuesto gratuito, sin compromiso y con respuesta en 24 horas.
+        </p>
+        <p class="text-green-200 text-sm mb-10">⏳ Cupos de obra limitados por mes</p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="https://wa.me/REEMPLAZAR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-white text-brand-green px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto justify-center"
+          >
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            Hablar por WhatsApp ahora
+          </a>
+          <a
+            href="#contacto"
+            class="inline-flex items-center justify-center border-2 border-white/60 text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors w-full sm:w-auto"
+          >
+            Evaluar mi proyecto
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section id="faq" class="py-24 bg-brand-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-14 fade-up">
+          <p class="text-xs uppercase tracking-widest text-brand-green font-semibold mb-3">
+            Preguntas frecuentes
+          </p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-text">
+            Todo lo que necesitás saber antes de empezar
+          </h2>
+        </div>
+
+        <!-- Acordeón -->
+        <div class="max-w-3xl mx-auto flex flex-col gap-3 fade-up">
+
+          <article class="faq-item bg-white rounded-2xl border border-brand-warm shadow-sm overflow-hidden" role="region">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Puedo construir en el fondo del terreno de mis padres?</span>
+              <i data-lucide="plus" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer px-6">
+              Sí. Evaluamos la situación legal del terreno y armamos el proyecto dentro de lo
+              que permite la normativa. Es una de las consultas más frecuentes.
+            </div>
+          </article>
+
+          <article class="faq-item bg-white rounded-2xl border border-brand-warm shadow-sm overflow-hidden" role="region">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Cómo funciona si somos 2 o 3 personas para comprar un terreno?</span>
+              <i data-lucide="plus" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer px-6">
+              Asesoramos desde la subdivisión hasta la construcción de cada unidad.
+              Cada propietario tiene su vivienda independiente con su presupuesto.
+            </div>
+          </article>
+
+          <article class="faq-item bg-white rounded-2xl border border-brand-warm shadow-sm overflow-hidden" role="region">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Qué tan resistentes son las construcciones Steel Framing en Uruguay?</span>
+              <i data-lucide="plus" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer px-6">
+              Cumplen normativa uruguaya vigente. Están diseñadas para vientos fuertes,
+              humedad costera y sismos. El acero galvanizado no se oxida ni se pudre.
+            </div>
+          </article>
+
+          <article class="faq-item bg-white rounded-2xl border border-brand-warm shadow-sm overflow-hidden" role="region">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Cuánto tarda una vivienda de 45m²?</span>
+              <i data-lucide="plus" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer px-6">
+              Entre 2 y 4 meses desde que arranca la obra, dependiendo de la complejidad
+              del proyecto y el terreno.
+            </div>
+          </article>
+
+          <article class="faq-item bg-white rounded-2xl border border-brand-warm shadow-sm overflow-hidden" role="region">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Se puede ampliar después?</span>
+              <i data-lucide="plus" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer px-6">
+              Sí. Es una de las ventajas del Steel Framing: las estructuras en seco permiten
+              modificaciones y ampliaciones futuras sin demoler.
+            </div>
+          </article>
+
+          <article class="faq-item bg-white rounded-2xl border border-brand-warm shadow-sm overflow-hidden" role="region">
+            <button class="faq-btn" aria-expanded="false">
+              <span>¿Trabajan en todo Uruguay?</span>
+              <i data-lucide="plus" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer px-6">
+              Sí. Operamos en Montevideo, Canelones, Maldonado y coordinamos proyectos en el
+              interior según el caso.
+            </div>
+          </article>
+
+        </div><!-- /acordeón -->
+      </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 fade-up">
+          <h2 class="text-3xl lg:text-4xl font-bold text-brand-text mb-4">
+            Evaluá tu proyecto sin costo
+          </h2>
+          <p class="text-brand-muted leading-relaxed">
+            Completá el formulario y te respondemos en menos de 24 horas.
+            Sin compromiso, sin letra chica.
+          </p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="max-w-xl mx-auto fade-up">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/REEMPLAZAR"
+            method="POST"
+            class="bg-brand-cream rounded-2xl p-8 border border-brand-warm flex flex-col gap-5"
+          >
+            <div>
+              <label for="nombre" class="block text-sm font-medium text-brand-text mb-1.5">
+                Nombre completo
+              </label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="Tu nombre"
+                class="w-full bg-white border border-brand-warm rounded-xl px-4 py-3 text-sm text-brand-text placeholder:text-brand-muted focus:outline-none focus:ring-2 focus:ring-brand-green"
+              />
+            </div>
+
+            <div>
+              <label for="telefono" class="block text-sm font-medium text-brand-text mb-1.5">
+                Teléfono
+              </label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                placeholder="09X XXX XXX"
+                class="w-full bg-white border border-brand-warm rounded-xl px-4 py-3 text-sm text-brand-text placeholder:text-brand-muted focus:outline-none focus:ring-2 focus:ring-brand-green"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-brand-text mb-1.5">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="tu@email.com"
+                class="w-full bg-white border border-brand-warm rounded-xl px-4 py-3 text-sm text-brand-text placeholder:text-brand-muted focus:outline-none focus:ring-2 focus:ring-brand-green"
+              />
+            </div>
+
+            <div>
+              <label for="tipo-proyecto" class="block text-sm font-medium text-brand-text mb-1.5">
+                Tipo de proyecto
+              </label>
+              <select
+                id="tipo-proyecto"
+                name="tipo_proyecto"
+                required
+                class="w-full bg-white border border-brand-warm rounded-xl px-4 py-3 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-green"
+              >
+                <option value="" disabled selected>Seleccioná una opción</option>
+                <option value="vivienda-nueva">Vivienda nueva Steel Framing</option>
+                <option value="ampliacion">Ampliación</option>
+                <option value="subdivision">Subdivisión de terreno</option>
+                <option value="pergola">Pérgola o espacio exterior</option>
+                <option value="parrillero">Parrillero</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="mensaje" class="block text-sm font-medium text-brand-text mb-1.5">
+                Mensaje (opcional)
+              </label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                placeholder="Contanos tu proyecto o situación..."
+                class="w-full bg-white border border-brand-warm rounded-xl px-4 py-3 text-sm text-brand-text placeholder:text-brand-muted focus:outline-none focus:ring-2 focus:ring-brand-green resize-none"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-brand-green text-white w-full py-3.5 rounded-xl font-semibold hover:bg-brand-dark transition-colors shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              Quiero que me contacten
+            </button>
+          </form>
+
+          <!-- Mensaje de éxito (oculto por defecto) -->
+          <div
+            id="contact-success"
+            class="hidden bg-brand-cream rounded-2xl p-10 border border-brand-warm text-center"
+            aria-live="polite"
+            role="status"
+          >
+            <div class="text-5xl mb-6">✉️</div>
+            <h3 class="text-xl font-bold text-brand-text mb-2">
+              ¡Listo! Te respondemos en menos de 24 horas.
+            </h3>
+            <p class="text-brand-muted">Revisá tu WhatsApp o email.</p>
+          </div>
+        </div><!-- /max-w-xl -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-brand-dark text-gray-400 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <!-- Izquierda: logo + datos -->
+        <div class="flex flex-col items-center md:items-start gap-2">
+          <a href="#" class="flex items-center gap-2">
+            <i data-lucide="building-2" class="w-5 h-5 text-brand-medium"></i>
+            <span class="text-lg font-black tracking-tight text-white">
+              FRAME<span class="text-brand-medium">SUR</span>
+            </span>
+          </a>
+          <a href="tel:+598099000000" class="flex items-center gap-2 text-sm hover:text-white transition-colors">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            099 000 000
+          </a>
+          <a href="mailto:contacto@framesur.com.uy" class="flex items-center gap-2 text-sm hover:text-white transition-colors">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            contacto@framesur.com.uy
+          </a>
+        </div>
+
+        <!-- Centro: copyright -->
+        <p class="text-sm text-center">
+          © 2026 FrameSur. Construcción moderna en Uruguay.
+        </p>
+
+        <!-- Derecha: redes -->
+        <div class="flex items-center gap-4">
+          <a
+            href="mailto:contacto@framesur.com.uy"
+            aria-label="Email"
+            class="hover:text-white transition-colors"
+          >
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="hover:text-white transition-colors"
+          >
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="hover:text-white transition-colors"
+          >
+            <i data-lucide="facebook" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BOTÓN WHATSAPP FLOTANTE ==================== -->
+  <div class="fixed bottom-6 right-6 z-50 group">
+    <!-- Tooltip -->
+    <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap bg-white text-brand-text text-xs font-medium px-3 py-2 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+      Presupuesto gratis en 24hs
+    </span>
+    <a
+      id="whatsapp-btn"
+      href="https://wa.me/REEMPLAZAR"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+      class="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:-translate-y-1 hover:[animation-play-state:paused] transition-transform"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+  </div>
+
+  <!-- ==================== STICKY CTA MOBILE ==================== -->
+  <div
+    id="sticky-cta"
+    class="hidden fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white border-t border-gray-200 p-4"
+  >
+    <a
+      href="https://wa.me/REEMPLAZAR"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center justify-center gap-2 bg-brand-green text-white rounded-xl py-3 font-semibold w-full text-sm"
+    >
+      📲 Pedir presupuesto gratis
+    </a>
+  </div>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- App JS -->
+  <script src="app.js" defer></script>
+
+  <!-- CHECKLIST DE PUBLICACIÓN:
+    [ ] Número de WhatsApp: reemplazar wa.me/REEMPLAZAR
+    [ ] Email: contacto@framesur.com.uy
+    [ ] Teléfono footer: 099 000 000
+    [ ] Formspree endpoint: formspree.io/f/REEMPLAZAR
+    [ ] OG URL: https://framesur.com.uy
+    [ ] Schema.org teléfono y dirección
+    [ ] Instagram y Facebook links
+    [ ] Favicon real
+    [ ] Imágenes propias (reemplazar Unsplash)
+    [ ] Precios reales de proyectos
+  -->
+</body>
+</html>

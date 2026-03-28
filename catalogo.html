@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Catálogo de proyectos | FrameSur</title>
+  <meta name="description" content="Catálogo de proyectos tipo en Steel Framing. Planos reales, costos orientativos y tiempo de obra definido. Casa 1 dorm 45m², casa 2 dorm 45m² y proyectos a medida." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Catálogo de proyectos | FrameSur" />
+  <meta property="og:description" content="Catálogo de proyectos tipo en Steel Framing. Planos reales, costos orientativos y tiempo de obra definido." />
+  <meta property="og:url" content="https://framesur.com.uy/catalogo.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: {
+              dark:   '#1a3a2a',
+              green:  '#2d6a4f',
+              medium: '#52b788',
+              cream:  '#f5f0e8',
+              warm:   '#e9e0d0',
+              text:   '#2c2c2c',
+              muted:  '#6b7280',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "FrameSur",
+    "description": "Construimos tu proyecto de vivienda a medida. Steel Framing, ampliaciones y espacios exteriores en Uruguay.",
+    "url": "https://framesur.com.uy",
+    "telephone": "+598-XXXXXXXX",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dirección placeholder",
+      "addressLocality": "Montevideo",
+      "addressCountry": "UY"
+    },
+    "sameAs": []
+  }
+  </script>
+</head>
+<body class="font-sans text-brand-text bg-white">
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header
+    id="navbar"
+    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-shadow duration-300"
+  >
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <i data-lucide="building-2" class="w-6 h-6 text-brand-green"></i>
+        <span class="text-xl font-black tracking-tight text-brand-text">
+          FRAME<span class="text-brand-green">SUR</span>
+        </span>
+      </a>
+
+      <!-- Links desktop -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Menú principal">
+        <a href="index.html#soluciones"
+           class="text-sm font-medium text-brand-muted hover:text-brand-green transition-colors">
+          Soluciones
+        </a>
+        <a href="index.html#proyectos"
+           class="text-sm font-medium text-brand-muted hover:text-brand-green transition-colors">
+          Proyectos
+        </a>
+        <a href="index.html#nosotros"
+           class="text-sm font-medium text-brand-muted hover:text-brand-green transition-colors">
+          Nosotros
+        </a>
+        <a href="index.html#contacto"
+           class="text-sm font-medium text-brand-muted hover:text-brand-green transition-colors">
+          Contacto
+        </a>
+      </nav>
+
+      <!-- CTA desktop + hamburger mobile -->
+      <div class="flex items-center gap-4">
+        <a
+          href="https://wa.me/REEMPLAZAR"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden md:inline-flex items-center bg-brand-green text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md hover:bg-brand-dark transition-colors"
+        >
+          Presupuesto sin cargo
+        </a>
+
+        <!-- Hamburger mobile -->
+        <button
+          id="menu-toggle"
+          class="hamburger md:hidden text-brand-text"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div><!-- /inner -->
+
+    <!-- Menú mobile -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+      <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1" aria-label="Menú mobile">
+        <a href="index.html#soluciones" class="mobile-menu-link text-sm font-medium text-brand-muted hover:text-brand-green py-3 transition-colors">
+          Soluciones
+        </a>
+        <a href="index.html#proyectos" class="mobile-menu-link text-sm font-medium text-brand-muted hover:text-brand-green py-3 transition-colors">
+          Proyectos
+        </a>
+        <a href="index.html#nosotros" class="mobile-menu-link text-sm font-medium text-brand-muted hover:text-brand-green py-3 transition-colors">
+          Nosotros
+        </a>
+        <a href="index.html#contacto" class="mobile-menu-link text-sm font-medium text-brand-muted hover:text-brand-green py-3 transition-colors">
+          Contacto
+        </a>
+        <div class="border-t border-gray-100 mt-2 pt-4">
+          <a
+            href="https://wa.me/REEMPLAZAR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mobile-menu-link flex items-center justify-center gap-2 bg-brand-green text-white w-full py-3 rounded-lg text-sm font-semibold"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Escribinos por WhatsApp
+          </a>
+        </div>
+      </nav>
+    </div><!-- /mobile-menu -->
+
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="pt-20">
+
+    <!-- ==================== HERO CATÁLOGO ==================== -->
+    <section class="py-32 bg-brand-dark text-white text-center">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-2 text-white/60 hover:text-white text-sm transition-colors mb-8"
+        >
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          Volver al inicio
+        </a>
+        <h1 class="text-4xl lg:text-5xl font-black tracking-tight mb-4">
+          Catálogo de proyectos tipo
+        </h1>
+        <p class="text-white/70 text-lg lg:text-xl">
+          Modelos probados. Planos reales. Costos orientativos.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== PROYECTO 1 · 45m² 1 DORM ==================== -->
+    <section id="proyecto-45-1d" class="py-20 bg-white scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+          <!-- Columna izquierda -->
+          <div class="fade-up">
+            <span class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
+              Steel Framing
+            </span>
+            <h2 class="text-3xl font-black text-brand-text mb-4">
+              Casa 1 dormitorio — 45m²
+            </h2>
+            <p class="text-brand-muted leading-relaxed mb-4">
+              Diseñada para terrenos de pequeñas dimensiones o para quienes buscan una
+              solución eficiente de uso propio o como inversión para alquiler. La planta libre
+              integra cocina, estar y comedor en un solo espacio luminoso.
+            </p>
+            <p class="text-brand-muted leading-relaxed mb-8">
+              La estructura en Steel Framing permite terminar la obra en 2 a 3 meses desde
+              el inicio, con costo cerrado desde el día uno. Sin sorpresas, sin demoras
+              climáticas, sin humedad de obra.
+            </p>
+
+            <!-- Specs técnicos -->
+            <dl class="grid grid-cols-2 gap-4 text-sm mb-8 p-6 bg-brand-cream rounded-2xl">
+              <div class="flex items-center gap-2">
+                <i data-lucide="ruler" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Superficie</dt>
+                  <dd class="font-semibold text-brand-text">45 m²</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="bed-double" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Dormitorios</dt>
+                  <dd class="font-semibold text-brand-text">1</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="bath" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Baños</dt>
+                  <dd class="font-semibold text-brand-text">1 completo</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Plazo de obra</dt>
+                  <dd class="font-semibold text-brand-text">2–3 meses</dd>
+                </div>
+              </div>
+            </dl>
+
+            <!-- Precio -->
+            <div class="mb-2">
+              <p class="text-xs text-brand-muted uppercase tracking-wider mb-1">Precio orientativo</p>
+              <p class="text-3xl font-black text-brand-green">Desde US$ 9.432 <span class="text-base font-semibold text-brand-muted">+ IVA</span></p>
+            </div>
+            <p class="text-xs text-brand-muted mb-4">
+              * Precio orientativo sujeto a especificaciones finales. Flete no incluido.
+            </p>
+
+            <!-- Forma de pago -->
+            <div class="flex items-center gap-2 text-sm text-brand-muted mb-8">
+              <i data-lucide="credit-card" class="w-4 h-4 text-brand-green shrink-0"></i>
+              <span>60% al inicio · 40% previo a entrega</span>
+            </div>
+
+            <!-- CTA -->
+            <a
+              href="https://wa.me/REEMPLAZAR"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-brand-green text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:bg-brand-dark transition-colors"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              Consultar este proyecto
+            </a>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="fade-up delay-200">
+            <img
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80"
+              alt="Casa 1 dormitorio 45m² en Steel Framing"
+              class="w-full rounded-2xl shadow-lg mb-6 object-cover aspect-[4/3]"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <!-- Incluye -->
+            <div class="bg-brand-cream rounded-2xl p-6">
+              <h3 class="font-semibold text-brand-text mb-4">Incluye:</h3>
+              <ul class="space-y-3 text-sm text-brand-text">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Planos de anteproyecto y proyecto
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Estructura completa en acero galvanizado (Steel Framing)
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Cálculo de ingeniería
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Materiales secos (ver detalle)
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Planos de montaje
+                </li>
+              </ul>
+              <p class="text-xs text-brand-muted italic mt-4">
+                Materiales secos sujetos a disponibilidad de stock.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROYECTO 2 · 45m² 2 DORM ==================== -->
+    <section id="proyecto-45-2d" class="py-20 bg-brand-cream scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+          <!-- Columna izquierda -->
+          <div class="fade-up">
+            <span class="inline-block bg-brand-green text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
+              Steel Framing
+            </span>
+            <h2 class="text-3xl font-black text-brand-text mb-4">
+              Casa 2 dormitorios — 45m²
+            </h2>
+            <p class="text-brand-muted leading-relaxed mb-4">
+              Una planta que aprovecha al máximo los 45m² para alojar a una familia o pareja
+              de compañeros. La distribución con hall de acceso separa los dormitorios del área
+              social, logrando privacidad sin resignar funcionalidad.
+            </p>
+            <p class="text-brand-muted leading-relaxed mb-8">
+              Ideal para subdivisiones de terrenos familiares o como inversión con rentabilidad
+              inmediata. Planos aprobables, costo cerrado y plazo de obra concreto.
+            </p>
+
+            <!-- Specs técnicos -->
+            <dl class="grid grid-cols-2 gap-4 text-sm mb-8 p-6 bg-white rounded-2xl">
+              <div class="flex items-center gap-2">
+                <i data-lucide="ruler" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Superficie</dt>
+                  <dd class="font-semibold text-brand-text">45 m²</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="bed-double" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Dormitorios</dt>
+                  <dd class="font-semibold text-brand-text">2</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="bath" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Baños</dt>
+                  <dd class="font-semibold text-brand-text">1 completo</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Plazo de obra</dt>
+                  <dd class="font-semibold text-brand-text">2–4 meses</dd>
+                </div>
+              </div>
+            </dl>
+
+            <!-- Precio -->
+            <div class="mb-2">
+              <p class="text-xs text-brand-muted uppercase tracking-wider mb-1">Precio orientativo</p>
+              <p class="text-3xl font-black text-brand-green">Desde US$ 12.217 <span class="text-base font-semibold text-brand-muted">+ IVA</span></p>
+            </div>
+            <p class="text-xs text-brand-muted mb-4">
+              * Precio orientativo sujeto a especificaciones finales. Flete no incluido.
+            </p>
+
+            <!-- Forma de pago -->
+            <div class="flex items-center gap-2 text-sm text-brand-muted mb-8">
+              <i data-lucide="credit-card" class="w-4 h-4 text-brand-green shrink-0"></i>
+              <span>60% al inicio · 40% previo a entrega</span>
+            </div>
+
+            <!-- CTA -->
+            <a
+              href="https://wa.me/REEMPLAZAR"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-brand-green text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:bg-brand-dark transition-colors"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              Consultar este proyecto
+            </a>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="fade-up delay-200">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80"
+              alt="Casa 2 dormitorios 45m² en Steel Framing"
+              class="w-full rounded-2xl shadow-lg mb-6 object-cover aspect-[4/3]"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <!-- Incluye -->
+            <div class="bg-white rounded-2xl p-6 border border-brand-warm">
+              <h3 class="font-semibold text-brand-text mb-4">Incluye:</h3>
+              <ul class="space-y-3 text-sm text-brand-text">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Planos de anteproyecto y proyecto
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Estructura completa en acero galvanizado (Steel Framing)
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Cálculo de ingeniería
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Materiales secos (ver detalle)
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Planos de montaje
+                </li>
+              </ul>
+              <p class="text-xs text-brand-muted italic mt-4">
+                Materiales secos sujetos a disponibilidad de stock.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROYECTO 3 · A MEDIDA ==================== -->
+    <section id="proyecto-medida" class="py-20 bg-white scroll-mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+          <!-- Columna izquierda -->
+          <div class="fade-up">
+            <span class="inline-block bg-brand-dark text-white text-xs font-semibold px-3 py-1 rounded-full mb-4">
+              A medida
+            </span>
+            <h2 class="text-3xl font-black text-brand-text mb-4">
+              Ampliación o subdivisión
+            </h2>
+            <p class="text-brand-muted leading-relaxed mb-4">
+              Si ya tenés un terreno —propio, familiar o en sociedad— diseñamos la solución
+              constructiva que mejor se adapta a lo que tenés disponible. No partimos de un
+              modelo fijo: partimos de tu situación real.
+            </p>
+            <p class="text-brand-muted leading-relaxed mb-8">
+              Trabajamos ampliaciones sobre estructuras existentes, subdivisiones con dos o más
+              unidades independientes y proyectos de uso mixto (residencial + comercial). Primer
+              consulta sin cargo.
+            </p>
+
+            <!-- Specs técnicos -->
+            <dl class="grid grid-cols-2 gap-4 text-sm mb-8 p-6 bg-brand-cream rounded-2xl">
+              <div class="flex items-center gap-2">
+                <i data-lucide="ruler" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Superficie</dt>
+                  <dd class="font-semibold text-brand-text">A definir</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="layout-dashboard" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Planta</dt>
+                  <dd class="font-semibold text-brand-text">Personalizable</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="bath" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Baños</dt>
+                  <dd class="font-semibold text-brand-text">1+</dd>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="clock" class="w-5 h-5 text-brand-green shrink-0"></i>
+                <div>
+                  <dt class="text-brand-muted text-xs">Plazo de obra</dt>
+                  <dd class="font-semibold text-brand-text">A consultar</dd>
+                </div>
+              </div>
+            </dl>
+
+            <!-- Precio -->
+            <div class="mb-2">
+              <p class="text-xs text-brand-muted uppercase tracking-wider mb-1">Precio orientativo</p>
+              <p class="text-3xl font-black text-brand-green">Desde US$ CONSULTAR <span class="text-base font-semibold text-brand-muted">+ IVA</span></p>
+            </div>
+            <p class="text-xs text-brand-muted mb-4">
+              * Precio orientativo sujeto a especificaciones finales. Flete no incluido.
+            </p>
+
+            <!-- Forma de pago -->
+            <div class="flex items-center gap-2 text-sm text-brand-muted mb-8">
+              <i data-lucide="credit-card" class="w-4 h-4 text-brand-green shrink-0"></i>
+              <span>60% al inicio · 40% previo a entrega</span>
+            </div>
+
+            <!-- CTA -->
+            <a
+              href="https://wa.me/REEMPLAZAR"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-brand-green text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:bg-brand-dark transition-colors"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              Consultar este proyecto
+            </a>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="fade-up delay-200">
+            <img
+              src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=900&q=80"
+              alt="Proyecto a medida - ampliación o subdivisión"
+              class="w-full rounded-2xl shadow-lg mb-6 object-cover aspect-[4/3]"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <!-- Incluye -->
+            <div class="bg-brand-cream rounded-2xl p-6">
+              <h3 class="font-semibold text-brand-text mb-4">Incluye:</h3>
+              <ul class="space-y-3 text-sm text-brand-text">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Planos de anteproyecto y proyecto
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Estructura completa en acero galvanizado (Steel Framing)
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Cálculo de ingeniería
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Materiales secos (ver detalle)
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-brand-green mt-0.5 shrink-0"></i>
+                  Planos de montaje
+                </li>
+              </ul>
+              <p class="text-xs text-brand-muted italic mt-4">
+                Materiales secos sujetos a disponibilidad de stock.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="py-20 bg-brand-dark text-white text-center">
+      <div class="max-w-2xl mx-auto px-4 sm:px-6">
+        <h2 class="text-3xl lg:text-4xl font-black mb-4">
+          ¿No encontrás lo que buscás?
+        </h2>
+        <p class="text-white/70 text-lg mb-10">
+          Armamos tu proyecto a medida.
+        </p>
+        <a
+          href="https://wa.me/REEMPLAZAR"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-3 bg-brand-medium text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-brand-green transition-colors shadow-xl"
+        >
+          <i data-lucide="message-circle" class="w-6 h-6"></i>
+          Escribinos por WhatsApp
+        </a>
+        <p class="text-white/50 text-sm mt-4">Sin compromiso · Respuesta en 24hs</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-brand-dark text-gray-400 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+        <!-- Izquierda: logo + datos -->
+        <div class="flex flex-col items-center md:items-start gap-2">
+          <a href="index.html" class="flex items-center gap-2">
+            <i data-lucide="building-2" class="w-5 h-5 text-brand-medium"></i>
+            <span class="text-lg font-black tracking-tight text-white">
+              FRAME<span class="text-brand-medium">SUR</span>
+            </span>
+          </a>
+          <a href="tel:+598099000000" class="flex items-center gap-2 text-sm hover:text-white transition-colors">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            099 000 000
+          </a>
+          <a href="mailto:contacto@framesur.com.uy" class="flex items-center gap-2 text-sm hover:text-white transition-colors">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            contacto@framesur.com.uy
+          </a>
+        </div>
+
+        <!-- Centro: copyright -->
+        <p class="text-sm text-center">
+          © 2026 FrameSur. Construcción moderna en Uruguay.
+        </p>
+
+        <!-- Derecha: redes -->
+        <div class="flex items-center gap-4">
+          <a
+            href="mailto:contacto@framesur.com.uy"
+            aria-label="Email"
+            class="hover:text-white transition-colors"
+          >
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="hover:text-white transition-colors"
+          >
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+          </a>
+          <a
+            href="#"
+            aria-label="Facebook"
+            class="hover:text-white transition-colors"
+          >
+            <i data-lucide="facebook" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BOTÓN WHATSAPP FLOTANTE ==================== -->
+  <div class="fixed bottom-6 right-6 z-50 group">
+    <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 whitespace-nowrap bg-white text-brand-text text-xs font-medium px-3 py-2 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+      Presupuesto gratis en 24hs
+    </span>
+    <a
+      id="whatsapp-btn"
+      href="https://wa.me/REEMPLAZAR"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+      class="flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:-translate-y-1 hover:[animation-play-state:paused] transition-transform"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+  </div>
+
+  <!-- ==================== STICKY CTA MOBILE ==================== -->
+  <div
+    id="sticky-cta"
+    class="hidden fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white border-t border-gray-200 p-4"
+  >
+    <a
+      href="https://wa.me/REEMPLAZAR"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center justify-center gap-2 bg-brand-green text-white rounded-xl py-3 font-semibold w-full text-sm"
+    >
+      📲 Pedir presupuesto gratis
+    </a>
+  </div>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+
+  <!-- App JS -->
+  <script src="app.js" defer></script>
+
+  <!-- CHECKLIST DE PUBLICACIÓN:
+    [ ] Número de WhatsApp: reemplazar wa.me/REEMPLAZAR
+    [ ] Email: contacto@framesur.com.uy
+    [ ] Teléfono footer: 099 000 000
+    [ ] Formspree endpoint: formspree.io/f/REEMPLAZAR
+    [ ] OG URL: https://framesur.com.uy
+    [ ] Schema.org teléfono y dirección
+    [ ] Instagram y Facebook links
+    [ ] Favicon real
+    [ ] Imágenes propias (reemplazar Unsplash)
+    [ ] Precios reales de proyectos
+  -->
+</body>
+</html>
