@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/toble/OneDrive/Desktop/Web2026/**)",
+      "Bash(npx create-next-app@latest framesur-next --js --tailwind --eslint=false --app --no-src-dir --import-alias=\"@/*\" --no-turbopack)",
+      "Bash(npx create-next-app@latest framesur-next --js --tailwind --app --no-src-dir --import-alias=\"@/*\" --no-turbopack)",
+      "Bash(npx create-next-app@latest --help)",
+      "Bash(npx create-next-app@latest framesur-next --js --tailwind --app --no-src-dir --import-alias=\"@/*\" --yes --disable-git)",
+      "Bash(npm install:*)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\toble\\\\OneDrive\\\\Desktop\\\\Web2026\\\\framesur-next\\\\components\\\\sections\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\toble\\\\OneDrive\\\\Desktop\\\\Web2026\\\\framesur-next\\\\components\\\\ui\")",
+      "Bash(npm run:*)",
+      "Bash(node -e \"const lr = require\\(''lucide-react''\\); const keys = Object.keys\\(lr\\); console.log\\(keys.filter\\(k => k.toLowerCase\\(\\).includes\\(''instagram''\\) || k.toLowerCase\\(\\).includes\\(''facebook''\\) || k.toLowerCase\\(\\).includes\\(''social''\\) || k.toLowerCase\\(\\).includes\\(''share''\\)\\)\\)\")",
+      "Read(//c/Users/toble/AppData/Local/Temp/claude/c--Users-toble/OneDrive/Desktop/Web2026/framesur-soluciones/3a4f2a6a-a414-4213-a32d-4994c56bbbcf/tasks/**)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\toble\\OneDrive\\Desktop\\Web2026\\framesur-next\\app",
+      "C:\\Users\\toble\\OneDrive\\Desktop\\Web2026\\framesur-next\\components"
+    ]
+  }
+}

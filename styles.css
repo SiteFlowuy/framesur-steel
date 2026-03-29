@@ -100,7 +100,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1.25rem 0;
+  padding: 1.5rem 2rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -122,11 +122,13 @@
   padding-bottom: 0;
   color: #6b7280;
   line-height: 1.7;
+  font-size: 0.925rem;
 }
 
 .faq-item.is-open .faq-answer {
   max-height: 400px;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.75rem;
+  padding-top: 0.5rem;
 }
 
 .faq-icon {
